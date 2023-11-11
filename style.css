@@ -229,7 +229,7 @@ top: 14vh;
         height: 20vh;
     }
     .fname{
-        top: -2vh;
+        top: 10vh;
         right: 60%;
     }
     .lname{
@@ -316,5 +316,32 @@ top: 14vh;
 .tw:hover{
     
 }
+
+@media (min-width :200px) and (max-width: 600px) {
+    .logo-name {
+        width: 45%;
+        height: 20%;
+        position: relative;
+        left: -11.5vw;
+        top: 17vh;
+    }
+    .fname{
+        font-size: x-large;
+    }
+    .lname{
+        font-size: x-large;
+    }
+    .contain{
+        width: 85%;
+        position: relative;
+        left: 3.5vh;
+    }
+    .one{
+        margin-bottom: 1vh;
+    }
+    .two{
+        margin-bottom: 0.5vh;
+    }
+  }
 
     
