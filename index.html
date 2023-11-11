@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Tiwari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo"><a href="#">Suraj Tiwari</a></div>
+        <ul class="link disk">
+            <li><a href="#">Home </a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">ContactUs</a></li>
+            
+        </ul>
+        <div class="togle">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+
+    </nav>
+    
+</header>
+<div class="contain">
+<div class="text">
+    <div class="part">
+        <div class="one">Hi,Its Me</div>
+        <div class="two">I'm <span class="name">SURAJ</span></div>
+        <div class="three">I'm web developer . our main goal to help  and satisfied the local and global client by web development solution</div>
+        <div class="socialicon">
+            
+            <div class=" size"><a href=""><i class="fa fa-instagram insta"></i></a></div>
+            <div class=" size"><a href=""><i class="fa fa-github facebok"></i></a></div>
+            <div class=" size"><a href=""><i class="fa fa-phone tw"></i></a></div>
+            
+        </div>
+    </div>
+</div>
+<div class="logo-name">
+    <div class="fname">
+        Suraj
+    </div>
+    <div class="lname">
+        Tiwari
+    </div>
+</div>
+</div>
+<div class="dropdown ">
+    <li><a href="#">Home </a></li>
+    <li><a href="#">About </a></li>
+    <li><a href="#">ContactUs</a></li>
+</div>
+
+<script>
+    const toglebtn =document.querySelector(".togle")
+    const toglebtni =document.querySelector(".togle i")
+    const dropdown =document.querySelector(".dropdown")
+    toglebtn.onclick = function(){
+        dropdown.classList.toggle("open")
+        const isopen = dropdown.classList.contains('open')
+        toglebtni.classList= isopen?"fa fa-close":"fa fa-bars"
+    }
+</script>
+</body>
+</html>
