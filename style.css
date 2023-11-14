@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     
+    
 }
 body{
     background-image: linear-gradient(to right,white,rgb(218, 216, 247) ,white);
@@ -43,7 +44,13 @@ header{
 }
 .logo{
     font-size: 1.5rem;
-    font-weight: bold;
+    
+    
+}
+.logo1{
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
    
 }
 nav .link{
@@ -53,7 +60,8 @@ nav .link{
     right: 35%;
     font-size: 1.2rem;
     transition: scale 0.2 ease;
-    
+    font-weight: bold;
+    transition: 0.4s;
 
 }
 .logo{
@@ -68,8 +76,11 @@ nav .link{
     cursor:pointer;
 
 }
+li{
+    transition: 0.4s;
+}
 .link :hover{
-    scale: 1.05;
+    scale: 1.3;
 }
 .link :active{
     scale : 0.95;
@@ -103,7 +114,7 @@ nav .link{
 
 .contain{
     width: 95vw;
-    height: 85vh;
+    height: 75vh;
     background-color: rgba(122, 98, 122, 0.1);
     position: relative;
     left: 2.5vw;
@@ -111,6 +122,7 @@ nav .link{
     border-radius: 20px;
     box-shadow: 20px 20px 100px grey;
     display: flex;
+    overflow:visible;
    
 }
 .text{
@@ -124,8 +136,8 @@ nav .link{
     
 }
 .part{
-    width: 90%;
-    height: 50%;
+    width: 85%;
+    height: 60%;
    
     position: relative;
     left: 5.5vw;
@@ -133,6 +145,7 @@ nav .link{
     transform: translate(0, -50%);
 }
 .one{
+    width: fit-content;
     margin-bottom: 2vh;
     font-family: 'Oswald', sans-serif;
     font-size: x-large;
@@ -140,6 +153,7 @@ nav .link{
     text-shadow: 10px 10px 8px grey;;
 }
 .two{
+    width: fit-content;
     margin-bottom: 2vh;
     font-family: 'Oswald', sans-serif;
     font-size: xx-large;
@@ -147,6 +161,7 @@ nav .link{
     text-shadow: 10px 10px 8px grey;;
 }
 .three{
+    width: fit-content;
     margin-bottom: 2vh;
     font-family: 'Oswald', sans-serif;
     font-size: x-large;
@@ -167,7 +182,8 @@ width: 45%;
 height: 90%;
 position: relative;
 left: 2.5vw;
-top: 14vh;
+top: 50%;
+transform: translate(0, -50%);
 
 }
 .fname:hover{
@@ -205,61 +221,7 @@ top: 14vh;
     animation: updown 3s linear infinite ;
     text-shadow: 10px 10px 8px grey;;
 }
-@media (max-width:1250px) {
-    .logo{
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    nav .link{
-        display: none;
-    }
-    nav .togle{
-        display: block;
-    }
-    .dropdown{
-        display: block;
-    }
-    .contain{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .logo-name{
-        height: 20vh;
-    }
-    .fname{
-        top: 10vh;
-        right: 60%;
-    }
-    .lname{
-        top: -1vh;
-    }
-    .text {
-        width: 90%;
-        height: 90%;
-        position: relative;
-        
-    }
-    .part{
-        top: 45%;
-    }
-    .socialicon{
-        text-align: center;
-        position: relative;
-        left: 25%;
-    }
 
-    
-}
-@media (max-width:600px){
-    .socialicon{
-        text-align: center;
-        position: relative;
-        left: 20%;
-    }
-    
-}
 @keyframes updown {
     0% ,100%{
         transform: translate(0, 15%);
@@ -285,16 +247,18 @@ top: 14vh;
 }
 .socialicon{
     width: 90%;
-    height: 15%;
+    height: 20%;
     display: flex;
 }
 .size{
     font-size: 40px;
-    margin: 2vh 3vw;
+    margin-left: 2vw;
     position: relative;
-    top: 1vh;
+    gap: 2vw;
     cursor:pointer;
-    left: 2vw;
+    left: 10vw;
+    height: auto;
+   
 }
 .insta{
     color: red;
@@ -305,43 +269,409 @@ top: 14vh;
 .facebok{
     color: rgb(5, 5, 5);
 }
-.insta:hover{
+.same:hover{
+    scale: 1.2;
+}
+.same{
+    transition: 0.4s;
+}
+/*skill css*/
+.grid{
+   
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+   
+    
+    }
+.skill{
+    width: 95vw;
+    height: auto;
+    left: 2.5vw;
+   border-radius: 20px;
+   position: relative;
+   left: 2vw;
+   top: 4vh;  
+}
+.skill-text{
+    position: relative;
+   
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 10px 10px 8px grey;;
+    text-align: center;
+    translate: (0,-50%);
+    margin-bottom: 2vh;
+    text-decoration: underline;
+}
+.skill-cont{
+    width: 20vw;
+    height: 40vh;
+    position: relative;
+    left: 12vw;
+    margin: 2vh;
+    backdrop-filter: blur(38px);
+    border-radius: 20px;
+    box-shadow: 20px 20px 100px grey;
+
+}
+.hmtl{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(90%);
+    border-radius: 20px;
+    transition: 0.4s;
+    
+}
+.hmtl:hover{
+    filter: grayscale(0%) ;
+    box-shadow: 20px 15px 5px grey;
+    scale: 1.02;
+    
+}
+.grid{
+    position: relative;
+    
     
 }
 
-.facebok:hover{
-    
-    
-}
-.tw:hover{
-    
-}
+/* responsive css*/
 
-@media (min-width :200px) and (max-width: 600px) {
+
+    @media (max-width:839px) {
+    .logo{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    nav .link{
+        display: none;
+    }
+    nav .togle{
+        display: block;
+    }
+    .dropdown{
+        display: block;
+    }
+    .contain{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .logo-name{
+        height: 20vh;
+        position: relative;
+    top: 13vh;
+    }
+    .fname{
+       
+        right: 60%;
+        font-size: large;
+        top: 0vh;
+        height: auto;
+    }
+    .lname{
+        top: -1vh;
+        top: 4.2vh;
+        font-size: large;
+    }
+    .text {
+        width: 90%;
+        height: 90%;
+        position: relative;
+        
+    }
+    .part{
+        top: 45%;
+    }
+    .socialicon{
+        text-align: center;
+        position: relative;
+        left: 25%;
+    }
+    
+
+    
+}
+@media (min-width :500px) and (max-width: 700px) {
+    .logo{
+        position: relative;
+        left: 35%;
+        
+        
+    }
     .logo-name {
         width: 45%;
         height: 20%;
         position: relative;
-        left: -11.5vw;
-        top: 17vh;
-    }
-    .fname{
-        font-size: x-large;
-    }
-    .lname{
-        font-size: x-large;
+        left: -0.5vw;
+        top: 2vh;
+        
     }
     .contain{
         width: 85%;
         position: relative;
-        left: 3.5vh;
+        left: 8%;
+        height: 57vh;
+        top: 2vh;
+            
     }
     .one{
         margin-bottom: 1vh;
+        text-shadow: none;
+            
     }
     .two{
-        margin-bottom: 0.5vh;
+        margin-bottom: 0.5vh;text-shadow: none;
+            
     }
-  }
+    .three{
+        text-shadow: none;
+        font-size: medium;
+            
+       
+    }
+    .fname{
+        font-size: small;
+        top: 2vh;
+        left: 17vw;
+    }
+    .lname{
+        font-size: small;
+        top: 5vh;
+        left: 21vw;
+    }
+    .socialicon{
+        text-align: center;
+        position: relative;
+        left: 0vw;
+        bottom: -0vh;
+    }
+    .part{
+        overflow-y: scroll;
+        height: 30vh;
+        
 
+    }
+    .name{
+        text-shadow: 10px 10px 8px grey;
+    }
+    .skill-cont {
+        
+        height: 28vh;
+        width: 23vw;
+        left: 8vw;
+    }
+    .text{
+            
+        height: 40vh;
+        top: 0vh;
+    }
     
+   
+  }
+@media (min-width :300px) and (max-width: 400px) {
+    .fname{
+        font-size: small;
+        top: -1vh;
+        left: 10vw;
+    }
+    .lname{
+        font-size: small;
+        top: 3vh;
+        left: 15vw;
+    }
+    .part{
+        overflow-y: scroll;
+    position: relative;
+    top: 21vh;
+    height: 39vh;
+    }
+   
+    .one{
+        margin-bottom: 0vh;
+        text-shadow: none;
+        font-size: large;
+    }
+    .two{
+        font-size: large;
+        margin-bottom: 1vh;
+    }
+    .three{
+       
+        height: 17vh;
+        font-size: large;
+        line-height: 7vh;
+        
+    }
+    .text {
+        height: 38vh;
+        top: -5vh;
+
+    }
+    .socialicon {
+        text-align: center;
+        position: relative;
+        left: 3vw;
+        top: 3.5vh;
+        top: 10.5vh;
+        
+        height: auto;
+    }
+    .skill-cont {
+        
+        height: 95%;
+        width: 21vw;
+        left: 9vw;
+    }
+    .contain{
+        left: 1.2vw;
+        height: 65vh;
+    }
+    .logo1{
+        font-size: x-large;
+    }
+    .grid{
+        position: relative;
+        left: 0vh;
+    }
+    .logo-name {
+        height: 11vh;
+        position: relative;
+        top: -7vh;
+    }
+}
+@media (min-width :401px) and (max-width: 499px) {
+    .fname{
+        font-size: small;
+        top: -1vh;
+        left: 10vw;
+    }
+    .lname{
+        font-size: small;
+        top: 3vh;
+        left: 15vw;
+    }
+    .part{
+        overflow-y: scroll;
+        position: relative;
+        top: 23vh;
+        height: 40vh;
+    }
+   
+    .one{
+        margin-bottom: 0vh;
+        text-shadow: none;
+        font-size: large;
+    }
+    .two{
+        font-size: large;
+        margin-bottom: 1vh;
+    }
+    .three{
+       
+        height: 17vh;
+        font-size: large;
+        line-height: 5vh;
+    }
+    .socialicon {
+        text-align: center;
+        position: relative;
+        left: 3vw;
+        bottom: 2.5vh;
+    }
+    .text {
+        height: 46vh;
+        top: -2vh;
+    }
+    .contain{
+        left: 2vw;
+        height: 65vh;
+    }
+    .logo1{
+        font-size: x-large;
+    }
+    .logo-name {
+        height: 17vh;
+        position: relative;
+        top: 10vh
+        
+    }
+    .skill-cont {
+        height: 20vh;
+        left: 11vw;
+    }
+    .skill-text{
+        margin-bottom: 0px;
+    }
+}
+@media (min-width :840px) and (max-width: 1000px) {
+  .fname{
+        font-size: x-large;
+        
+       
+    }
+    .lname{
+        font-size: x-large;
+        
+    }
+    .part{
+        overflow-y: scroll;
+        height: 46vh;
+        
+    }
+        .one{
+            margin-bottom: 1vh;
+            
+            font-size: x-large;
+           
+        }
+        .two{
+            font-size: x-large;
+            margin-bottom: 1vh;
+            
+        }
+        .three{
+           
+            height: 17vh;
+            font-size: large;
+            
+        }
+        .contain{
+            left: 2vw;
+            height: 55vh;
+        }
+        .logo{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        nav .link{
+            display: none;
+        }
+        nav .togle{
+            display: block;
+        }
+        .dropdown{
+            display: block;
+        }
+        
+        .logo-name{
+            height: 20vh;
+            position: relative;
+            top: 13vh;
+        }
+        .skill-cont{
+            height: 30vh;
+        }
+        
+        .part{
+            
+            height: 32vh;
+        }
+        .socialicon{
+            position: relative;
+            top: -2vh;
+        }
+    
+}
