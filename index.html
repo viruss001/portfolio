@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj Tiwari</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    
+   
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
@@ -12,11 +17,11 @@
 <body>
     <header>
     <nav>
-        <div class="logo"><a href="#">Suraj Tiwari</a></div>
+        <div class="logo"><a class = "logo1"href="#">Suraj Tiwari</a></div>
         <ul class="link disk">
-            <li><a href="#">Home </a></li>
-            <li><a href="#">About </a></li>
-            <li><a href="#">ContactUs</a></li>
+            <li><a  href="#">Home </a></li>
+            <li><a  href="#">About </a></li>
+            <li><a  href="#">ContactUs</a></li>
             
         </ul>
         <div class="togle">
@@ -29,18 +34,23 @@
 </header>
 <div class="contain">
 <div class="text">
-    <div class="part">
-        <div class="one">Hi,Its Me</div>
-        <div class="two">I'm <span class="name">SURAJ</span></div>
-        <div class="three">I'm web developer . our main goal to help  and satisfied the local and global client by web development solution</div>
-        <div class="socialicon">
+   
+        <div class="part">
+            <div class="one">Hi,Its Me</div>
+            <div class="two">I'm <span class="name">SURAJ</span></div>
+            <div class="three">I'm web developer . our main goal to help  and satisfied the local and global client by web development solution</div>
+            <div class="socialicon">
             
-            <div class=" size"><a href=""><i class="fa fa-instagram insta"></i></a></div>
-            <div class=" size"><a href=""><i class="fa fa-github facebok"></i></a></div>
-            <div class=" size"><a href=""><i class="fa fa-phone tw"></i></a></div>
+                <div class=" size"><a href=""><i class="fa fa-instagram insta same"></i></a></div>
+                <div class=" size"><a href=""><i class="fa fa-github facebok same"></i></a></div>
+                <div class=" size"><a href=""><i class="fa fa-phone tw same"></i></a></div>
+                
+            </div>
             
         </div>
-    </div>
+        
+    
+    
 </div>
 <div class="logo-name">
     <div class="fname">
@@ -51,21 +61,32 @@
     </div>
 </div>
 </div>
-<div class="dropdown ">
+<div class="dropdown togle">
     <li><a href="#">Home </a></li>
     <li><a href="#">About </a></li>
     <li><a href="#">ContactUs</a></li>
 </div>
+<div class="skill">
+<div class="skill-text">
+    Skills
+</div>
+<div class="griding">
+    <div class="grid">
+        <div class="skill-cont "><img class = "hmtl"src="download.jpg" alt=""></div>
+        <div class="skill-cont "><img class = "hmtl"src="unnamed.png" alt=""></div>
+        <div class="skill-cont js"><img class = "hmtl"src="download (1).jpg" alt=""></div>
+        <div class="skill-cont"><img class = "hmtl"src="python.jpg" alt=""></div>
+        <div class="skill-cont"><img class = "hmtl"src="reactpng.png" alt=""></div>
+        <div class="skill-cont"><img class = "hmtl"src="django.jpg" alt=""></div>
+    
+    </div>
+</div>
 
-<script>
-    const toglebtn =document.querySelector(".togle")
-    const toglebtni =document.querySelector(".togle i")
-    const dropdown =document.querySelector(".dropdown")
-    toglebtn.onclick = function(){
-        dropdown.classList.toggle("open")
-        const isopen = dropdown.classList.contains('open')
-        toglebtni.classList= isopen?"fa fa-close":"fa fa-bars"
-    }
-</script>
+
+
+</div>
+
+
+
 </body>
 </html>
